@@ -1,0 +1,16 @@
+{
+    "name": "amirhossein5/config-err",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Amirhossein5\\ConfigErr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amirHossein5",
+            "email": "amir5665@yahoo.com"
+        }
+    ],
+    "require": {}
+}
