@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 
-function configErr(string $key): mixed
+function configErr(string $key, bool $throwOnEmpty = true): mixed
 {
     if (!Config::has($key)) {
         if (!App::isProduction()) {
@@ -17,7 +17,7 @@ function configErr(string $key): mixed
         }
     }
 
-    if (!Config::get($key)) {
+    if (blank(Config::get($key)) && $throwOnEmpty) {
         if (!App::isProduction()) {
             throw new Exception("No value found for config key: {$key}");
         } else {
