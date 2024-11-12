@@ -1,6 +1,6 @@
 <?php
 
-namespace Amirhossein5\ConfigErr;
+namespace AmirHossein5\ConfigErr;
 
 use Exception;
 use Illuminate\Support\Facades\App;

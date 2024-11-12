@@ -3,8 +3,9 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Amirhossein5\\ConfigErr\\": "src/"
-        }
+            "AmirHossein5\\ConfigErr\\": "src/"
+        },
+        "files": ["src/Helpers.php"]
     },
     "authors": [
         {
